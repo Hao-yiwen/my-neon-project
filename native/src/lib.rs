@@ -1,5 +1,6 @@
 use neon::prelude::*;
-use rand::Rng;
+use rand::rngs::SmallRng;
+use rand::{Rng, SeedableRng};
 
 fn quicksort(arr: &mut [i32]) {
     if arr.len() <= 1 {
@@ -45,7 +46,7 @@ fn sort(mut cx: FunctionContext) -> JsResult<JsArray> {
 // 计算圆周率
 
 fn estimate_pi(num_samples: u32) -> f64 {
-    let mut rng = rand::thread_rng();
+    let mut rng = SmallRng::from_entropy();
     let mut inside_circle = 0;
 
     for _ in 0..num_samples {

@@ -16,4 +16,4 @@ neon-build = "0.10.1"
 
 [dependencies]
 neon = "0.10.1"
-rand = "0.8"
+rand = { version = "0.8", features = ["small_rng"] }

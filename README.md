@@ -19,11 +19,13 @@ Average JavaScript sorting time: 302.05 milliseconds
 
 ```bash
 Estimating Pi with Rust...
-Rust Pi Calculation: 1.657s
-Estimated Pi (Rust): 3.14162252
+Rust Pi Calculation: 241.897ms
+Estimated Pi (Rust): 3.14162672
 Estimating Pi with JavaScript...
-JavaScript Pi Calculation: 1.549s
-Estimated Pi (JavaScript): 3.1413854
+JavaScript Pi Calculation: 1.573s
+Estimated Pi (JavaScript): 3.14175944
 ```
 
-所以在逻辑不怎么复杂的时候，完全没有必要使用 rust 加速。。。
+## 总结
+
+rust在不同场景速度皆优于js，在快排侧速度快1倍，在计算圆周率侧要快6倍。
