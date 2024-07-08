@@ -8,7 +8,7 @@ https://github.com/neon-bindings/neon
 
 rust 和 js 的运行速度对比
 
-## 快排 100000 个数字
+## 快排 1000000 个数字
 
 ```bash
 Average Rust sorting time: 159.61 milliseconds
