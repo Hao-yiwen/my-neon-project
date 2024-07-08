@@ -1,0 +1,19 @@
+[package]
+name = "my-neon-project"
+version = "0.1.0"
+authors = ["yw.hao <yw.hao@trip.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "my_neon_project"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.10.1"
+
+[dependencies]
+neon = "0.10.1"
+rand = "0.8"
